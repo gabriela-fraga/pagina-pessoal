@@ -1,0 +1,11 @@
+@import '../../styles/variables.scss';
+
+.menu {
+    background-color: $primary-color;
+    color: $white;
+    height: auto;
+
+    @media (min-width: 768px) {
+        height: 100%;
+    }
+}
