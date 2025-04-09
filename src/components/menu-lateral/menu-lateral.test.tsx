@@ -6,6 +6,6 @@ describe('Menu Lateral component', () => {
   it('renders without crashing and displays content', () => {
     render(<MenuLateral />);
 
-    expect(screen.getByText(/Menu Lateral/i)).toBeInTheDocument();
+    expect(screen.getByText(/Gabriela Fraga Moreira Medeiros/i)).toBeInTheDocument();
   });
 });
