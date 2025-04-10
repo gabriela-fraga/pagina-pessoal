@@ -1,5 +1,5 @@
 import React from "react";
-import photo from "../../assets/photo.png";
+import photo from "../../../public/photo.png";
 import "./menu-lateral.scss";
 
 export default class MenuLateral extends React.Component {
@@ -22,7 +22,7 @@ export default class MenuLateral extends React.Component {
         >
           <div className="img-container my-5 mx-auto">
             <img
-              src={photo}
+              src={photo.src}
               alt="Imagem Circular"
               className="imagem-circular"
             />

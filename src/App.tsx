@@ -1,4 +1,5 @@
-import MenuLateral from "./menu-lateral/menu-lateral";
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import MenuLateral from "./components/menu-lateral/menu-lateral";
 
 function App() {
   return (
