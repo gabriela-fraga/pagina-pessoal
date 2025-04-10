@@ -1,4 +1,4 @@
-@import '../styles/variables.scss';
+@use '../styles/variables.scss';
 
 .btn-link {
     background: transparent;
@@ -9,6 +9,6 @@
     text-decoration: none;
 
     &:hover {
-        color: $dark-button-accent;
+        color: variables.$dark-button-accent;
     }
 }

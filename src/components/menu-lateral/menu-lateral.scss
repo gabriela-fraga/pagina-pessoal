@@ -1,8 +1,8 @@
-@import '../../styles/variables.scss';
+@use '../../styles/variables.scss';
 
 .menu {
-    background-color: $primary-color;
-    color: $white;
+    background-color: variables.$primary-color;
+    color: variables.$white;
     height: auto;
 
     @media (min-width: 768px) {
