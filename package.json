@@ -24,7 +24,9 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.js": "eslint --fix"
+    "**/*.{js,ts,tsx}": [
+      "eslint --fix"
+    ]
   },
   "eslintConfig": {
     "extends": [
