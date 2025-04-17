@@ -1,11 +1,7 @@
 @use '../styles/variables.scss';
 
-.btn-link {
-    background: transparent;
-    border: none;
+.link {
     color: inherit;
-    cursor: pointer;
-    padding: 0;
     text-decoration: none;
 
     &:hover {

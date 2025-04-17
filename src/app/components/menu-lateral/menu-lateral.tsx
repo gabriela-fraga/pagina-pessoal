@@ -1,6 +1,7 @@
 import React from "react";
-import photo from "../../../public/photo.png";
+import photo from "../../../../public/photo.png";
 import "./menu-lateral.scss";
+import Link from "next/link";
 
 export default function MenuLateral() {
   return (
@@ -28,10 +29,10 @@ export default function MenuLateral() {
         </div>
         <div className="d-flex flex-column align-items-center w-100">
           <h4 className="text-center mb-4">Gabriela Fraga Moreira Medeiros</h4>
-          <button className="btn-link my-2">Dados Pessoais</button>
-          <button className="btn-link my-2">Experiência</button>
-          <button className="btn-link my-2">Educação</button>
-          <button className="btn-link my-2">Competências</button>
+          <Link className="link my-2" href="/dados-pessoais">Dados Pessoais</Link>
+          <Link className="link my-2" href="/experiencia">Experiência</Link>
+          <Link className="link my-2" href="/educacao">Educação</Link>
+          <Link className="link my-2" href="/competencias">Competências</Link>
         </div>
       </div>
     </div>

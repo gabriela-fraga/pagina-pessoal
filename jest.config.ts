@@ -13,8 +13,7 @@ const customJestConfig = {
   },
   testEnvironment: 'jest-environment-jsdom',
   collectCoverageFrom: [
-      "src/**/*.{ts,tsx}",
-      "!src/app/**/*.{ts,tsx}", 
+      "src/app/**/*.{ts,tsx}", 
     ]
 }
 
