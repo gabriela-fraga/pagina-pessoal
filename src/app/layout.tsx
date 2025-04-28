@@ -1,7 +1,6 @@
-import "bootstrap/dist/css/bootstrap.min.css";
 import { Metadata } from "next";
 import React from "react";
-import "./index.scss";
+import "./globals.css";
 import MenuLateral from "./components/menu-lateral/menu-lateral";
 
 export const metadata: Metadata = {
@@ -15,13 +14,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html suppressHydrationWarning>
-      <body>
-        <div className="row min-vh-100 flex-md-row flex-column">
-          <div className="col-12 col-md-3 h-md-100">
-            <MenuLateral></MenuLateral>
+    <html lang="pt-BR" className="h-full">
+      <body className="h-full">
+        <div className="min-h-screen flex flex-col md:flex-row">
+          <div className="w-full md:w-1/4 bg-primary text-white flex flex-col">
+            <MenuLateral />
           </div>
-          <div className="col-12 col-md-7 h-md-100" id="root">
+          <div className="w-full md:w-3/4 flex flex-col" id="root">
             {children}
           </div>
         </div>

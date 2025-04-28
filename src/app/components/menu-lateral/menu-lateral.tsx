@@ -1,38 +1,53 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import photo from "../../../../public/photo.png";
-import "./menu-lateral.scss";
 import Link from "next/link";
 
 export default function MenuLateral() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className="menu col-12 d-md-flex flex-column">
+    <div className="bg-teal-950 text-white w-full flex flex-col md:h-full">
+      {/* Botão para expandir/retrair */}
       <button
-        className="btn btn-primary d-md-none"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#conteudoMenu"
-        aria-expanded="false"
-        aria-controls="conteudoMenu"
+        className="hover:bg-gray-800 text-white font-bold py-2 px-4 md:hidden"
+        onClick={() => setIsOpen(!isOpen)}
       >
-        Expand / Retract
+        {isOpen ? "Retract" : "Expand"}
       </button>
-      <div
-        id="conteudoMenu"
-        className="collapse d-md-flex flex-column align-items-center"
-      >
-        <div className="img-container my-5 mx-auto">
-          <img
-            src={photo.src}
-            alt="Imagem Circular"
-            className="imagem-circular"
-          />
+
+      {/* Conteúdo do menu */}
+      <div className={`${isOpen ? "block" : "hidden"} md:flex md:flex-col md:items-center`}>
+        {/* Foto */}
+        <div className="w-full flex justify-center my-5">
+          <div className="w-36 h-36 rounded-full overflow-hidden">
+            <img
+              src={photo.src}
+              alt="Imagem Circular"
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
-        <div className="d-flex flex-column align-items-center w-100">
-          <h4 className="text-center mb-4">Gabriela Fraga Moreira Medeiros</h4>
-          <Link className="link my-2" href="/dados-pessoais">Dados Pessoais</Link>
-          <Link className="link my-2" href="/experiencia">Experiência</Link>
-          <Link className="link my-2" href="/educacao">Educação</Link>
-          <Link className="link my-2" href="/competencias">Competências</Link>
+
+        {/* Info e links */}
+        <div className="flex flex-col items-center w-full">
+          <h4 className="text-center mb-4 px-4">
+            Gabriela Fraga Moreira Medeiros
+          </h4>
+
+          <Link className="my-2 hover:underline" href="/dados-pessoais">
+            Dados Pessoais
+          </Link>
+          <Link className="my-2 hover:underline" href="/experiencia">
+            Experiência
+          </Link>
+          <Link className="my-2 hover:underline" href="/educacao">
+            Educação
+          </Link>
+          <Link className="my-2 hover:underline" href="/competencias">
+            Competências
+          </Link>
         </div>
       </div>
     </div>
