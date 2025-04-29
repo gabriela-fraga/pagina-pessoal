@@ -32,9 +32,9 @@ export default function MenuLateral() {
 
         {/* Info e links */}
         <div className="flex flex-col items-center w-full">
-          <h4 className="text-center mb-4 px-4">
+          <h1 className="text-center text-xl mb-4 px-4">
             Gabriela Fraga Moreira Medeiros
-          </h4>
+          </h1>
 
           <Link className="my-2 hover:underline" href="/dados-pessoais">
             Dados Pessoais
