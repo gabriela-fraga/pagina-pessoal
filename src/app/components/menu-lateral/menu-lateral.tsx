@@ -39,7 +39,7 @@ export default function MenuLateral() {
           <Link className="my-2 hover:underline" href="/dados-pessoais">
             Dados Pessoais
           </Link>
-          <Link className="my-2 hover:underline" href="/experiencia">
+          <Link className="my-2 hover:underline" href="/experiencias">
             Experiência
           </Link>
           <Link className="my-2 hover:underline" href="/educacao">
