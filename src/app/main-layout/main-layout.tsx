@@ -7,7 +7,7 @@ export default function MainLayout({
 }) {
   return (
     <div className="flex flex-col md:flex-row" >
-      <div className="w-full md:w-1/4 bg-primary text-white flex flex-col">
+      <div className="w-full md:w-1/4 bg-teal-950 text-white flex flex-col">
         <MenuLateral />
       </div>
       <div className="w-full md:w-3/4 flex flex-col" id="root">

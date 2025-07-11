@@ -29,7 +29,7 @@ export default function MenuLateral() {
   };
 
   return (
-    <div className="bg-teal-950 text-white w-full flex flex-col md:h-full">
+    <div className="fixed top-0 left-0 h-screen bg-teal-950 text-white w-full md:w-80 flex flex-col md:h-full z-50">
       {/* Botão para expandir/retrair */}
       <button
         className="hover:bg-gray-800 text-white font-bold py-2 px-4 md:hidden"
