@@ -6,6 +6,8 @@ import Link from "next/link";
 
 export default function MenuLateral() {
   const [isOpen, setIsOpen] = useState(false);
+  const [showToast, setShowToast] = useState(false);
+  const [fadeOut, setFadeOut] = useState(false);
 
   const goToLinkedin = () => {
     window.open(
@@ -16,6 +18,10 @@ export default function MenuLateral() {
 
   const copyEmail = () => {
     navigator.clipboard.writeText("gabyfragamoreiramedeiros@gmail.com");
+    setShowToast(true);
+    setFadeOut(false);
+    setTimeout(() => setFadeOut(true), 1700);
+    setTimeout(() => setShowToast(false), 2000);
   };
 
   const goToWhatsapp = () => {
@@ -94,6 +100,13 @@ export default function MenuLateral() {
               onClick={goToLinkedin}
             ></i>
           </div>
+
+          {showToast && (
+            <div
+              className={`fixed bottom-0 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white px-4 py-2 rounded shadow-lg z-50 transition-all duration-500 ${fadeOut ? "opacity-0 translate-y-8" : "opacity-100 translate-y-0"}`} style={{ minWidth: 250, marginBottom: 20 }}>
+              Email copiado para a área de trabalho
+            </div>
+          )}
         </div>
       </div>
     </div>
