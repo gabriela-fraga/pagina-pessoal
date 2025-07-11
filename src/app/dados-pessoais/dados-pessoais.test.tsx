@@ -6,6 +6,6 @@ describe('Dados Pessoais component', () => {
   it('renders without crashing and displays content', () => {
     render(<DadosPessoais />);
 
-    expect(screen.getByText(/Me contate!/i)).toBeInTheDocument();
+    expect(screen.getByText(/Profissional com seis anos de experiência/i)).toBeInTheDocument();
   });
 });
