@@ -2,7 +2,7 @@ import React from "react";
 
 export default function DadosPessoais() {
   return (
-    <div className="col-12 m-15">
+    <div className="col-12 p-15">
       <p>Profissional com seis anos de experiência no desenvolvimento de aplicações web utilizando Angular. Possuo inglês fluente, o que me permite colaborar eficazmente com equipes internacionais. Meu objetivo é contribuir para o sucesso de projetos desafiadores e impactar positivamente a experiência dos usuários, com atenção para UX/UI e responsividade dos sistemas, buscando garantir a melhor experiência aos usuários em todos os cenários.</p>
 
       <p>Me contate!</p>

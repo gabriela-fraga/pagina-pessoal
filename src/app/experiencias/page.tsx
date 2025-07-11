@@ -4,7 +4,7 @@ import { experiencias } from "../data/experiencias";
 
 export default function Experiencias() {
   return (
-    <div className="col-12 m-15">
+    <div className="col-12 p-15">
       {experiencias.map((experiencia:ExperienciaProps, index: number) => (
         <Experiencia key={index} titulo={experiencia.titulo} empresa={experiencia.empresa} cidade={experiencia.cidade} inicio={experiencia.inicio} fim={experiencia.fim} descricao={experiencia.descricao}></Experiencia>
       ))}
