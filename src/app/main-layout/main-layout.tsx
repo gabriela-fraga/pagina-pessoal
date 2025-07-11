@@ -6,7 +6,7 @@ export default function MainLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="min-h-screen flex flex-col md:flex-row">
+    <div className="flex flex-col md:flex-row" >
       <div className="w-full md:w-1/4 bg-primary text-white flex flex-col">
         <MenuLateral />
       </div>
