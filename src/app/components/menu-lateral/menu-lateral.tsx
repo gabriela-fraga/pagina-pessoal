@@ -56,7 +56,7 @@ export default function MenuLateral() {
         </div>
 
         {/* Info e links */}
-        <div className="flex flex-col items-center w-full">
+        <div className="font-['Courier_New',monospace] flex flex-col items-center w-full">
           <h3 className="text-center text-xl mb-4 px-4">
             Gabriela Fraga Moreira Medeiros
           </h3>
