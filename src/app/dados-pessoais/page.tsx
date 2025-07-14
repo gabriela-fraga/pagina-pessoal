@@ -22,7 +22,7 @@ export default function DadosPessoais() {
             alt="Uma jovem mulher está programando em uma mesa com um notebook, cercada por plantas verdes. O ambiente transmite calma e foco. Na tela e ao redor dela estão as palavras CSS3, HTML5, React e Ang para Angular, destacando tecnologias de desenvolvimento web."
             className="max-w-full h-auto"
             width={300} height={300} />
-          <span className="text-sm">
+          <span className="text-xs">
             <a href="https://iconscout.com/illustrations/women"
               className="text-underline font-size-sm"
               target="_blank" >
