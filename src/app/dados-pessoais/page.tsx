@@ -38,7 +38,7 @@ export default function DadosPessoais() {
         </div>
 
         <span className="flex my-auto ml-auto col-8">
-          Profissional com seis anos de experiência no desenvolvimento de
+          Profissional com sete anos de experiência no desenvolvimento de
           aplicações web utilizando Angular e React. Possuo inglês fluente, o
           que me permite colaborar eficazmente com equipes internacionais. Meu
           objetivo é contribuir para o sucesso de projetos desafiadores e

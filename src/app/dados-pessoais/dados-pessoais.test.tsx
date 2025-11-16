@@ -17,7 +17,7 @@ describe("Dados Pessoais component", () => {
     render(<DadosPessoais />);
 
     expect(
-      screen.getByText(/Profissional com seis anos de experiência/i)
+      screen.getByText(/Profissional com sete anos de experiência/i)
     ).toBeInTheDocument();
   });
 
