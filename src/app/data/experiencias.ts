@@ -2,6 +2,19 @@ import { ExperienciaProps } from "../components/experiencia/experiencia";
 
 export const experiencias: ExperienciaProps[] = [
     {
+      titulo: "Desenvolvimento Front-end de Sistemas",
+      empresa: "2Mundos",
+      cidade: "Belo Horizonte, MG",
+      inicio: "Agosto 2025",
+      fim: "atualmente",
+      descricao: [
+        "Desenvolvimento de sistema web com uso de React, com enfoque em criação, edição e manutenção de componentes",
+        "Versionamento de código em Git",
+        "Fluxo de trabalho com SCRUM",
+        "Desenvolvimento de testes unitários"
+      ]
+    },
+    {
       titulo: "Desenvolvimento de Sistemas",
       empresa: "CI&T",
       cidade: "Belo Horizonte, MG",
@@ -17,7 +30,7 @@ export const experiencias: ExperienciaProps[] = [
       ]
     },
     {
-      titulo: "Desenvolvimento Front-End de Sistemas ",
+      titulo: "Desenvolvimento Front-end de Sistemas ",
       empresa: "Symplicity Brasil",
       cidade: "Belo Horizonte, MG",
       inicio: "Março 2021",
@@ -32,7 +45,7 @@ export const experiencias: ExperienciaProps[] = [
       ]
     },
     {
-      titulo: "Desenvolvimento de Sistemas Júnior",
+      titulo: "Desenvolvimento Front-end de Sistemas",
       empresa: "REF Spatial",
       cidade: "Belo Horizonte, MG",
       inicio: "Maio 2019",
